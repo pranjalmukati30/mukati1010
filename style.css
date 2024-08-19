@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(11, 1, 46);
+    background-image: url(background.webp);
+}
+#navbar{
+    width: 100%;
+    height: 5rem;
+
+ 
+    color: rgb(203, 227, 248);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+    position: fixed;
+    z-index: 1000;
+
+}
+
+#searchbar{
+    height: 2.5rem;
+    width: 30rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding-left: 2rem;
+}
+
+#icon{
+    height: 2.5rem;
+    width: 2.7rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    margin-left: 1%;
+    font-size: x-large;
+
+}
+#navbar a{
+    text-decoration: none;
+    color: rgb(203, 227, 248);
+}
+
+#navbar a:hover{
+    text-decoration: underline;
+    color: #ddddddd3;
+}
+
+#mode{
+    cursor: pointer;
+    height: 2rem;
+    width: 7rem;
+}
+
+
+
+#links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100px;
+   
+
+
+}
+footer{
+    margin-bottom: 0;
+    margin-top: 20rem;
+    height: 50rem;
+    width: 100%;
+}
+#links a{
+    text-decoration: none;
+    color: rgb(203, 227, 248);
+    font-size: large;
+    font-weight: 400;
+}
+
+
+#logo img{
+    width: 5rem;
+    border-radius: 2rem;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+   
+    max-width: 800px;
+    height: 450px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+   top: 5rem;
+   left: 40%;
+ 
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    display: none; /* Hide all iframes initially */
+}
+
+iframe.active{
+    display: block; /* Show the active iframe */
+    animation: fad 0.8s 1 ease-in;
+}
+
+@keyframes fad {
+    from{
+        opacity: .4;
+
+    }
+    to{
+        opacity: .8;
+    }
+    
+}
+
+/* iframe {
+    width: 100%;
+    height: 450px;
+    display: none; /* Hide all iframes initially 
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+iframe.active {
+    display: block; /* Show the active iframe 
+    opacity: 1;
+}
+ */
+
+
+.prev {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.next {
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#card{
+    background-color: rgb(253, 245, 245);
+    box-shadow: 5px 5px 5px rgb(15, 15, 15);
+    width: 30%;
+    height: 40%;
+    position: relative ;
+    align-items: center;
+    display: block;
+
+}
+
+
+
+#sidebar a{
+    text-decoration: none;
+    color: rgb(203, 227, 248);
+    margin-top: 50px;
+    top: 10rem;
+}
+
+#sidebar a:hover{
+    text-decoration: underline;
+}
+
+#sidebar{
+    height: 40rem;
+    width: 250px;
+    background-color: rgb(1, 18, 49);
+ bottom: 20rem;
+ border-radius: 10px;
+ display: block;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ font-size: xx-large;
+    padding: 20px;
+ 
+    color: white;
+    margin-top: 7rem;
+ 
+}
+
+
+main{
+    display: flex;
+   
+}
+
+#sidebar h2{
+    color: aqua;
+}
+
+#sidebar h4{
+    margin-top: 130px;
+    margin-left: 150px;
+}
